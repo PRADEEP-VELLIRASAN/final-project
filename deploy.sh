@@ -6,7 +6,7 @@ set -e
 echo "Deploying the application..."
 
 # Pull the latest Docker image
-docker pull ratheesh510vh/testops:latest
+docker pull pradeepv2006/pipelineproj:latest
 
 # Stop and remove the existing container if it exists
 docker stop your-app || true
