@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'ratheesh510vh/testops'  // Base image name
-        DOCKER_CREDENTIALS_ID = 'docker-hub-creds'  // Docker Hub credentials ID
+        IMAGE_NAME = 'pradeepv2006/pipelineproj'  // Base image name
+        DOCKER_CREDENTIALS_ID = '8076e78a-0765-449c-88e3-89ee32e77535'  // Docker Hub credentials ID
     }
 
     stages {
         stage('Checkout') {
             steps {
                 echo 'Checking out the repository...'
-                git branch: 'main', url: 'https://github.com/ratheeshvh/devops-final-project.git'
+                git branch: 'main', url: 'https://github.com/PRADEEP-VELLIRASAN/final-project.git'
             }
         }
 
